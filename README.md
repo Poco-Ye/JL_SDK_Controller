@@ -13,3 +13,10 @@
 
 
 ```
+
+```
+    uint32_t rets_addr;
+    __asm__ volatile("%0 = rets ;" : "=r"(rets_addr));
+    printf("%s, rets=0x%x\n", __FUNCTION__, rets_addr);
+
+```
