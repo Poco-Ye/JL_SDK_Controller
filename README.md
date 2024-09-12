@@ -20,3 +20,6 @@
     printf("%s, rets=0x%x\n", __FUNCTION__, rets_addr);
 
 ```
+```
+argdo %s/\n{/\r {\r\tprintf("[Y]%s %s\\n",__FILE__,__FUNCTION__);/g |update
+```
